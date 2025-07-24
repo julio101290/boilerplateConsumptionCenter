@@ -12,13 +12,12 @@ $routes->group('admin', function ($routes) {
     ]);
 
     $routes->post('consumptioncenter/save'
-    , 'ConsumptioncenterController::save'
-    , ['namespace' => 'julio101290\boilerplateconsumptioncenter\Controllers']
-        );
-    
-    $routes->post('consumptioncenter/getConsumptioncenter'
-        , 'ConsumptioncenterController::getConsumptioncenter'
-        , ['namespace' => 'julio101290\boilerplateconsumptioncenter\Controllers']
-        );    
+            , 'ConsumptioncenterController::save'
+            , ['namespace' => 'julio101290\boilerplateconsumptioncenter\Controllers']
+    );
 
+    $routes->post('consumptioncenter/getConsumptioncenter'
+            , 'ConsumptioncenterController::getConsumptioncenter'
+            , ['namespace' => 'julio101290\boilerplateconsumptioncenter\Controllers']
+    );
 });
